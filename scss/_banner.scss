@@ -1,0 +1,183 @@
+.banner {
+    min-height: calc(100vh - 97px);
+    &__holder {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%),
+            url(../images/banner-bg.png) center no-repeat;
+        background-size: cover;
+        min-height: calc(100vh - 94px);
+        padding-bottom: 102px;
+        text-align: center;
+        &--interier {
+            .main-title {
+                max-width: 849px;
+            }
+            .main-descr {
+                max-width: 639px;
+            }
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%),
+                url(../images/banner-bg2.png) left center no-repeat;
+            background-size: cover;
+        }
+        &--design {
+            .main-title {
+                max-width: 349px;
+            }
+            .main-descr {
+                max-width: 476px;
+            }
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%),
+                url(../images/banner-bg3.png) left center no-repeat;
+            background-size: cover;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            max-width: 1200px;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: rgba(#fff, 0.4);
+            bottom: 102px;
+        }
+    }
+
+    &__container {
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__descr {
+        margin-bottom: 50px;
+    }
+    &__btn {
+        background: #ae7b3c;
+        box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+    }
+    &__next {
+        position: absolute;
+        left: calc((100% - 1100px) / 2);
+        bottom: 32px;
+        z-index: 30;
+        background-color: transparent;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            svg {
+                fill: var(--color-copper);
+            }
+        }
+        &:active {
+            svg {
+                fill: var(--color-copper);
+            }
+        }
+        svg {
+            fill: var(--color-white);
+        }
+    }
+
+    &__prev {
+        position: absolute;
+        left: calc((100% - 1200px) / 2);
+        bottom: 32px;
+        z-index: 30;
+        background-color: transparent;
+        transform: translateY(-50%);
+        &:hover {
+            svg {
+                fill: var(--color-copper);
+            }
+        }
+        &:active {
+            svg {
+                fill: var(--color-copper);
+            }
+        }
+        svg {
+            fill: var(--color-white);
+        }
+    }
+
+    //media
+
+    @media (max-width: 1240px) {
+        &__prev {
+            left: 20px;
+        }
+        &__next {
+            left: 65px;
+        }
+    }
+    @media (max-width: 900px) {
+        min-height: calc(100vh - 86px);
+        &__holder {
+            min-height: calc(100vh - 86px);
+        }
+    }
+    @media (max-width: 500px) {
+        &__title {
+            font-size: 28px;
+            margin-bottom: 28px;
+        }
+        &__descr {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.banner-slider {
+    position: relative;
+
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+        right: calc((100% - 1210px) / 2) !important;
+        width: 135px !important;
+        text-align: center;
+        left: auto !important;
+        bottom: 45px !important;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .swiper-pagination-bullet {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        line-height: 100%;
+        color: rgba(#fff, 0.4);
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgba(#fff, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: transparent;
+        opacity: 1;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 7px;
+    }
+
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    @media (max-width: 1240px) {
+        .swiper-pagination {
+            position: absolute;
+            z-index: 2;
+            right: 20px !important;
+        }
+    }
+}

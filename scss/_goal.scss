@@ -1,0 +1,145 @@
+.goal {
+    overflow: hidden;
+    padding: 142px 0 0 0;
+    position: relative;
+
+    .video-left {
+        object-fit: cover;
+        position: absolute;
+        top: -40px;
+        left: -33%;
+    }
+
+    .video-right {
+        object-fit: cover;
+        position: absolute;
+        top: 102px;
+        right: -33%;
+    }
+
+    &__container {
+        border-bottom: 1px solid rgba(#282b22, 0.2);
+    }
+
+    &__caption {
+        position: relative;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 130%;
+        text-align: center;
+        color: var(--color-metal);
+        margin: 0 auto;
+        margin-bottom: 80px;
+        max-width: 815px;
+    }
+
+    &__line {
+        height: 177px;
+        width: 1px;
+        background-color: rgba(#282b22, 0.2);
+        margin: 0 77px;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        max-width: 970px;
+        margin: 0 auto;
+        border-top: 1px solid rgba(#282b22, 0.2);
+    }
+
+    &__descr {
+        position: relative;
+        margin-top: 35px;
+        padding-left: 35px;
+        max-width: 407px;
+        margin-bottom: 35px;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            top: 3px;
+            left: 2px;
+            background-image: url(../images/point.svg);
+            background-size: 18px 18px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media (max-width: 1380px) {
+        .video-left {
+            left: -24%;
+        }
+
+        .video-right {
+            right: -24%;
+        }
+    }
+
+    @media (max-width: 1230px) {
+        .video-left {
+            left: -20%;
+        }
+
+        .video-right {
+            top: 50px;
+            right: -20%;
+        }
+    }
+    @media (max-width: 1000px) {
+        .video-left {
+            display: none;
+        }
+
+        .video-right {
+            display: none;
+        }
+    }
+
+    @media (max-width: 740px) {
+        padding: 100px 0 0 0;
+
+        &__caption {
+            font-size: 28px;
+            margin-bottom: 60px;
+        }
+        &__descr {
+            padding-left: 30px;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        &__line {
+            margin: 0 30px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        padding: 80px 0 0 0;
+
+        &__caption {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        &__descr {
+            padding-left: 30px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        &__content {
+            flex-wrap: wrap;
+        }
+
+        &__line {
+            height: 1px;
+            width: 100%;
+            margin: 0;
+            // margin: 0 30px;
+        }
+    }
+}

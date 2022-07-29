@@ -1,0 +1,105 @@
+.provide {
+    padding: 100px 0;
+    background-color: var(--color-cabbage);
+
+    &__title {
+        margin-bottom: 70px;
+        color: var(--color-white);
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 31.5%;
+        padding-top: 97px;
+        background-size: 95px 95px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        &:nth-child(-n + 3) {
+            margin-bottom: 70px;
+        }
+        &--wardobe {
+            background-image: url(../images/wardrobe.svg);
+        }
+        &--furniture {
+            background-image: url(../images/furniture.svg);
+        }
+        &--burner {
+            background-image: url(../images/burner.svg);
+        }
+        &--door {
+            background-image: url(../images/door.svg);
+        }
+        &--floor {
+            background-image: url(../images/floor.svg);
+        }
+        &--brainstorm {
+            background-image: url(../images/brainstorm.svg);
+        }
+    }
+
+    &__caption {
+        font-size: 24px;
+        line-height: 130%;
+        color: var(--color-white);
+        opacity: 0.5;
+        text-align: center;
+    }
+    
+
+    @media (max-width: 740px) {
+        &__title {
+            font-size: 36px;
+            margin-bottom: 75px;
+        }
+        &__caption {
+            font-size: 18px;
+            line-height: 130%;
+        }
+
+        &__item {
+            padding-top: 87px;
+            &:nth-child(-n + 3) {
+                margin-bottom: 60px;
+            }
+        }
+        &__caption {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        padding: 80px 0;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        &__caption {
+            font-size: 18px;
+            line-height: 130%;
+        }
+
+        &__list {
+            flex-wrap: wrap;
+        }
+
+        &__item {     
+            background-size: 80px 80px;
+            width: 50%;
+            padding-top: 82px;
+            &:nth-child(-n + 3) {
+                margin-bottom: 50px;
+            }
+        }
+        &__caption {
+            font-size: 18px;
+        }
+    }
+}

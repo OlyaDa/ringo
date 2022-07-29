@@ -1,0 +1,106 @@
+.directions {
+    padding: 141px 0 143px 0;
+    &__list {
+        display: flex;
+        counter-reset: section;
+        align-items: flex-start;
+    }
+    &__item {
+        position: relative;
+        border-left: 1px solid rgba(#282b22, 0.2);
+        padding: 0 30px;
+        &::before {
+            counter-increment: section;
+            content: "0" counter(section);
+            display: block;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            color: var(--color-metal);
+            opacity: 0.5;
+            margin-bottom: 60px;
+        }
+        &:last-child {
+            border-right: 1px solid rgba(#282b22, 0.2);
+        }
+    }
+
+    .direction {
+        &__caption {
+            margin: 0;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            color: var(--color-cabbage);
+            margin-bottom: 5px;
+            min-height: 48px;
+        }
+
+        &__image {
+            margin-bottom: -5px;
+        }
+
+        @media (max-width: 1151px) {
+            &__caption {
+                min-height: 48px;
+            }
+        }
+        @media (max-width: 500px) {
+            &__caption {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 1000) {
+        padding-bottom: 116px;
+    }
+    @media (max-width: 740px) {
+        &__title {
+            font-size: 36px;
+            margin-bottom: 85px;
+        }
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            &:not(:last-child) {
+                margin-bottom: 60px;
+            }
+            &:last-child {
+                border-right: none;
+            }
+            &::before {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        padding: 80px 0;
+        &__item {
+            padding: 0;
+            border: none;
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+            &::before {
+                margin-bottom: 20px;
+            }
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 120%;
+            margin-bottom: 50px;
+        }
+        &__descr {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

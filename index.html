@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/graph-modal.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title></title>
+</head>
+
+<body id="page">
+    <div class="site-container">
+        <!--.......................HEADER.......................-->
+        <div class="overlay"></div>
+        <header class="header">
+            <div class="container header__container">
+                <a href="#" class="logo header__logo">
+                    <img src="images/logo.svg" alt="Ringo Ukraine">
+                </a>
+                <!-- nav -->
+                <nav class="nav header__nav">
+                    <!-- <nav class="nav__body"> -->
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item"><a data-goto=".page_section_1" href="#" class="nav__link">Напрямки</a>
+                        </li>
+                        <li class="nav__item"><a data-goto=".page_section_2" href="#" class="nav__link">Про
+                                компанію</a></li>
+                        <li class="nav__item"><a data-goto=".page_section_3" href="#" class="nav__link">Переваги</a>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">Етапи роботи</a></li>
+
+                        <ul class="social social--mobile header__social list-reset">
+                            <li class="social__item social">
+                                <a href="#" class="social__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.9471 8.305C20.937 7.54762 20.7952 6.79777 20.5281 6.089C20.2964 5.49115 19.9426 4.9482 19.4892 4.49483C19.0359 4.04146 18.4929 3.68765 17.8951 3.456C17.1954 3.19336 16.4562 3.05134 15.7091 3.036C14.7471 2.993 14.4421 2.981 12.0001 2.981C9.55807 2.981 9.24507 2.981 8.29007 3.036C7.54323 3.05145 6.80442 3.19347 6.10507 3.456C5.50713 3.68749 4.96409 4.04124 4.5107 4.49463C4.05732 4.94802 3.70356 5.49106 3.47207 6.089C3.2089 6.78813 3.06719 7.52711 3.05307 8.274C3.01007 9.237 2.99707 9.542 2.99707 11.984C2.99707 14.426 2.99707 14.738 3.05307 15.694C3.06807 16.442 3.20907 17.18 3.47207 17.881C3.70395 18.4788 4.05797 19.0216 4.51151 19.4748C4.96505 19.928 5.50813 20.2816 6.10607 20.513C6.8035 20.7862 7.54244 20.9384 8.29107 20.963C9.25407 21.006 9.55907 21.019 12.0011 21.019C14.4431 21.019 14.7561 21.019 15.7111 20.963C16.4582 20.9483 17.1974 20.8066 17.8971 20.544C18.4948 20.3121 19.0376 19.9582 19.4909 19.5048C19.9442 19.0515 20.2982 18.5087 20.5301 17.911C20.7931 17.211 20.9341 16.473 20.9491 15.724C20.9921 14.762 21.0051 14.457 21.0051 12.014C21.0031 9.572 21.0031 9.262 20.9471 8.305ZM11.9941 16.602C9.44007 16.602 7.37107 14.533 7.37107 11.979C7.37107 9.425 9.44007 7.356 11.9941 7.356C13.2202 7.356 14.396 7.84306 15.263 8.71004C16.13 9.57703 16.6171 10.7529 16.6171 11.979C16.6171 13.2051 16.13 14.381 15.263 15.248C14.396 16.1149 13.2202 16.602 11.9941 16.602ZM16.8011 8.263C16.6595 8.26313 16.5192 8.23534 16.3884 8.18121C16.2575 8.12708 16.1386 8.04768 16.0385 7.94755C15.9384 7.84743 15.859 7.72854 15.8049 7.59769C15.7507 7.46684 15.7229 7.3266 15.7231 7.185C15.7231 7.0435 15.7509 6.90339 15.8051 6.77266C15.8592 6.64193 15.9386 6.52315 16.0387 6.42309C16.1387 6.32304 16.2575 6.24367 16.3882 6.18952C16.519 6.13537 16.6591 6.1075 16.8006 6.1075C16.9421 6.1075 17.0822 6.13537 17.2129 6.18952C17.3436 6.24367 17.4624 6.32304 17.5625 6.42309C17.6625 6.52315 17.7419 6.64193 17.7961 6.77266C17.8502 6.90339 17.8781 7.0435 17.8781 7.185C17.8781 7.781 17.3961 8.263 16.8011 8.263Z" />
+                                        <path
+                                            d="M11.994 14.982C13.6525 14.982 14.997 13.6375 14.997 11.979C14.997 10.3205 13.6525 8.976 11.994 8.976C10.3355 8.976 8.99097 10.3205 8.99097 11.979C8.99097 13.6375 10.3355 14.982 11.994 14.982Z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item social">
+                                <a href="#" class="social__link">
+                                    <svg width="10" height="21" viewBox="0 0 10 21" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_228_466)">
+                                            <path
+                                                d="M2.55277 20.5746V10.9204H0V7.44441H2.55277V4.47548C2.55277 2.14247 4.0607 0 7.53529 0C8.9421 0 9.98237 0.134866 9.98237 0.134866L9.9004 3.38083C9.9004 3.38083 8.83949 3.3705 7.68178 3.3705C6.42879 3.3705 6.22804 3.94793 6.22804 4.90631V7.44441H10L9.83588 10.9204H6.22804V20.5746H2.55277Z" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_228_466">
+                                                <rect width="10" height="20.5746" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <div class="header__contacts--mobile">
+
+                        <a href="tel:380676615415" class="header__phone">+380 67661 5415</a>
+                        <a href="#" class="banner__btn header__btn btn btn-reset">Обговорити проект</a>
+                    </div>
+
+                    <!-- </nav> -->
+                </nav>
+                <div class="header__contacts">
+                    <ul class="social header__social list-reset">
+                        <li class="social__item social">
+                            <a href="#" class="social__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.9471 8.305C20.937 7.54762 20.7952 6.79777 20.5281 6.089C20.2964 5.49115 19.9426 4.9482 19.4892 4.49483C19.0359 4.04146 18.4929 3.68765 17.8951 3.456C17.1954 3.19336 16.4562 3.05134 15.7091 3.036C14.7471 2.993 14.4421 2.981 12.0001 2.981C9.55807 2.981 9.24507 2.981 8.29007 3.036C7.54323 3.05145 6.80442 3.19347 6.10507 3.456C5.50713 3.68749 4.96409 4.04124 4.5107 4.49463C4.05732 4.94802 3.70356 5.49106 3.47207 6.089C3.2089 6.78813 3.06719 7.52711 3.05307 8.274C3.01007 9.237 2.99707 9.542 2.99707 11.984C2.99707 14.426 2.99707 14.738 3.05307 15.694C3.06807 16.442 3.20907 17.18 3.47207 17.881C3.70395 18.4788 4.05797 19.0216 4.51151 19.4748C4.96505 19.928 5.50813 20.2816 6.10607 20.513C6.8035 20.7862 7.54244 20.9384 8.29107 20.963C9.25407 21.006 9.55907 21.019 12.0011 21.019C14.4431 21.019 14.7561 21.019 15.7111 20.963C16.4582 20.9483 17.1974 20.8066 17.8971 20.544C18.4948 20.3121 19.0376 19.9582 19.4909 19.5048C19.9442 19.0515 20.2982 18.5087 20.5301 17.911C20.7931 17.211 20.9341 16.473 20.9491 15.724C20.9921 14.762 21.0051 14.457 21.0051 12.014C21.0031 9.572 21.0031 9.262 20.9471 8.305ZM11.9941 16.602C9.44007 16.602 7.37107 14.533 7.37107 11.979C7.37107 9.425 9.44007 7.356 11.9941 7.356C13.2202 7.356 14.396 7.84306 15.263 8.71004C16.13 9.57703 16.6171 10.7529 16.6171 11.979C16.6171 13.2051 16.13 14.381 15.263 15.248C14.396 16.1149 13.2202 16.602 11.9941 16.602ZM16.8011 8.263C16.6595 8.26313 16.5192 8.23534 16.3884 8.18121C16.2575 8.12708 16.1386 8.04768 16.0385 7.94755C15.9384 7.84743 15.859 7.72854 15.8049 7.59769C15.7507 7.46684 15.7229 7.3266 15.7231 7.185C15.7231 7.0435 15.7509 6.90339 15.8051 6.77266C15.8592 6.64193 15.9386 6.52315 16.0387 6.42309C16.1387 6.32304 16.2575 6.24367 16.3882 6.18952C16.519 6.13537 16.6591 6.1075 16.8006 6.1075C16.9421 6.1075 17.0822 6.13537 17.2129 6.18952C17.3436 6.24367 17.4624 6.32304 17.5625 6.42309C17.6625 6.52315 17.7419 6.64193 17.7961 6.77266C17.8502 6.90339 17.8781 7.0435 17.8781 7.185C17.8781 7.781 17.3961 8.263 16.8011 8.263Z" />
+                                    <path
+                                        d="M11.994 14.982C13.6525 14.982 14.997 13.6375 14.997 11.979C14.997 10.3205 13.6525 8.976 11.994 8.976C10.3355 8.976 8.99097 10.3205 8.99097 11.979C8.99097 13.6375 10.3355 14.982 11.994 14.982Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item social">
+                            <a href="#" class="social__link">
+                                <svg width="10" height="21" viewBox="0 0 10 21" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_228_466)">
+                                        <path
+                                            d="M2.55277 20.5746V10.9204H0V7.44441H2.55277V4.47548C2.55277 2.14247 4.0607 0 7.53529 0C8.9421 0 9.98237 0.134866 9.98237 0.134866L9.9004 3.38083C9.9004 3.38083 8.83949 3.3705 7.68178 3.3705C6.42879 3.3705 6.22804 3.94793 6.22804 4.90631V7.44441H10L9.83588 10.9204H6.22804V20.5746H2.55277Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_228_466">
+                                            <rect width="10" height="20.5746" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="tel:380676615415" class="header__phone">+380 67661 5415</a>
+                </div>
+                <div class="nav__icon burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!--.......................BANNER.......................-->
+
+            <section class="banner">
+
+                <div class="banner-slider swiper">
+
+                    <div class="btn-reset slider-nav__btn slider-btn banner__prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" />
+                        </svg>
+                    </div>
+                    <div class="btn-reset slider-nav__btn slider-btn banner__next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z" />
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="banner__holder">
+                                <div class="container">
+                                    <div class="banner__content">
+                                        <h1 class="main-title main-title--center banner__title">
+                                            виробництво меблів
+                                        </h1>
+                                        <p class="main-descr main-descr--cente banner__descr">
+                                            Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
+                                            комерційних
+                                            приміщень,
+                                            забезпечимо Вас якісним меблевим продуктом власного виробництва.
+                                        </p>
+                                        <a href="#" class="banner__btn btn btn-reset" data-graph-animation="custom"
+                                            data-graph-path="first">Обговорити проект</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__holder banner__holder--interier">
+                                <div class="container">
+                                    <div class="banner__content">
+                                        <h1 class="main-title main-title--center banner__title">
+                                            комплексне меблювання інтреєрів
+                                        </h1>
+                                        <p class="main-descr main-descr--cente banner__descr">
+                                            Ми створені виконувати об`єктні задачі комплексного меблювання житлових та
+                                            комерційних приміщень.
+                                            Наш колектив націлений на результат -
+                                            вчасно реалізувати проект на найвищому рівні. Ми забезпечуємо ваш спокій та
+                                            беремо на себе вирішення будь-яких задач.
+                                        </p>
+                                        <a href="#" class="banner__btn btn btn-reset">Обговорити проект</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__holder banner__holder--design">
+                                <div class="container">
+                                    <div class="banner__content">
+                                        <h1 class="main-title main-title--center banner__title">
+                                            Дизайн інтреєру
+                                        </h1>
+                                        <p class="main-descr main-descr--cente banner__descr">
+                                            В дизайні ми поєднуємо стильні ідеї з практичною ергономікою та можливістю
+                                            точно реалізувати візуалізацію.
+                                            Наш інтер`єр - це ваш індивідуальний простір, зона комфорту в житті та
+                                            роботі
+                                        </p>
+                                        <a href="#" class="banner__btn btn btn-reset">Обговорити проект</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--.......................DIRECTIONS.......................-->
+
+            <section class="directions">
+                <div class="container">
+                    <h2 class="title title--center directions__title">Основні напрямки</h2>
+                    <ul class="list-reset directions__list">
+                        <li class="directions__item direction">
+                            <h3 class="direction__caption">Дизайн інтерєру</h3>
+                            <img src="images/direc1.jpg" alt="Direction 1" class="direction__image">
+                        </li>
+                        <li class="directions__item direction">
+                            <h3 class="direction__caption">Виробництво меблів</h3>
+                            <img src="images/direc2.jpg" alt="Direction 2" class="direction__image">
+                        </li>
+                        <li class="directions__item direction">
+                            <h3 class="direction__caption">Комплексне меблювання</h3>
+                            <img src="images/direc3.jpg" alt="Direction 3" class="direction__image">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--.......................PROVIDE.......................-->
+
+            <section class="provide">
+                <div class="container">
+                    <h2 class="provide__title title title--center">Ми забезпечемо вас </h2>
+                    <ul class="provide__list list-reset">
+                        <li class="provide__item provide__item--wardobe">
+                            <div class="provide__caption">Меблями</div>
+                        </li>
+                        <li class="provide__item provide__item--furniture">
+                            <div class="provide__caption">Освітленням</div>
+                        </li>
+                        <li class="provide__item provide__item--burner">
+                            <div class="provide__caption">Побутовою технікою</div>
+                        </li>
+                        <li class="provide__item provide__item--door">
+                            <div class="provide__caption">Дверима</div>
+                        </li>
+                        <li class="provide__item provide__item--floor">
+                            <div class="provide__caption">Стіновими панелями та
+                                підлоговим покриттям</div>
+                        </li>
+                        <li class="provide__item provide__item--brainstorm">
+                            <div class="provide__caption">Проектуванням</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--.......................GOAL.......................-->
+
+            <section class="goal">
+                <div class="container goal__container">
+                    <h3 class="goal__caption">
+                        <video class="video-left" src="video/left.mp4" autoplay loop muted width="160"
+                            height="200"></video>
+                        Проект Рінго Україна - створений виконувати об`єктні задачі комплексного меблювання житлових та
+                        комерційних приміщень.
+                        <video class="video-right" src="video/right.mp4" autoplay loop muted width="160"
+                            height="200"></video>
+                    </h3>
+                    <div class="goal__content">
+                        <p class="goal__descr descr">
+                            Наш колектив націлений на результат - вчасно реалізувати проект на найвищому рівні. Ми
+                            забезпечуємо спокій замовника та вирішуємо будь-які задачі
+                        </p>
+                        <span class="goal__line"></span>
+                        <p class="goal__descr descr">
+                            Рінго найкращий підрядник прораба, дизайнера, проект-менеджера або персональний помічник
+                            власника бізнесу, квартири чи салону
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- <div class="sm_image-trail-section">
+                <div class="sm_image-trail-container">
+
+                    <div class="text">
+                        <h1>One</h1>
+                    </div>
+
+                </div>
+                <div class="sm_image-trail-container">
+
+                    <div class="text">
+                        <h1>Two</h1>
+                    </div>
+
+                </div>
+                <div class="sm_image-trail-container">
+
+                    <div class="text">
+                        <h1>Three</h1>
+                    </div>
+
+                </div>
+                <div class="sm_image-trail-container">
+
+                    <div class="text">
+                        <h1>Four</h1>
+                    </div>
+
+                </div>
+
+                <div class="sm_image-trail-container">
+
+                    <div class="text">
+                        <h1>Five</h1>
+                    </div>
+
+                </div>
+
+                <div class="sm_image-trail-container">
+
+                    <div class="text">
+                        <h1>Six</h1>
+                    </div>
+
+                </div>
+
+                <div class="sm_image-trail"></div>
+            </div> -->
+            <!--.......................ADVANTAGES.......................-->
+
+            <section class="advantages">
+                <div class="container">
+                    <h2 class="advantages__title title title--center">Наші переваги</h2>
+                    <ul class="advantages__list list-reset sm_image-trail-section">
+                        <li class="advantages__item advantage sm_image-trail-container">
+                            <!-- <div class="advantage__image">
+                                <img src="images/advantage-mob.jpg" alt="Мобільність">
+                            </div> -->
+                            <div class="advantage__count">01</div>
+                            <div class="advantage__content">
+                                <div class="advantage__caption">Мобільність</div>
+                                <div class="advantage__descr descr">Проводимо зустрічі на об`єктах в затишних закладах
+                                    Києва</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item advantage advantage--two sm_image-trail-container">
+                            <!-- <div class="advantage__image">
+                                <img src="images/advantage-arr.jpg" alt="Надійність">
+                            </div> -->
+                            <div class="advantage__count">02</div>
+                            <div class="advantage__content">
+                                <div class="advantage__caption">Надійність</div>
+                                <div class="advantage__descr descr">Система нашої роботи зосереджена на якості та
+                                    термінах завершення&nbsp;проекту</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item advantage advantage--three sm_image-trail-container">
+                            <!-- <div class="advantage__image">
+                                <img src="images/advantage-qual.jpg" alt="Якість">
+                            </div> -->
+                            <div class="advantage__count">03</div>
+                            <div class="advantage__content">
+                                <div class="advantage__caption">Якість</div>
+                                <div class="advantage__descr descr">Виготовляємо виключно з перевірених європейських
+                                    брендів</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item advantage advantage--four sm_image-trail-container">
+                            <!-- <div class="advantage__image">
+                                <img src="images/advantage-prof.jpg" alt="Професіоналізм">
+                            </div> -->
+                            <div class="advantage__count">04</div>
+                            <div class="advantage__content">
+                                <div class="advantage__caption">Професіоналізм</div>
+                                <div class="advantage__descr descr">Наша команда - це клуб професіоналів, об`єднаних в
+                                    одній компанії</div>
+                            </div>
+                        </li>
+                        <li class="advantages__item advantage advantage--five sm_image-trail-container">
+                            <!-- <div class="advantage__image">
+                                <img src="images/advantage-ben.jpg" alt="Вигідність">
+                            </div> -->
+                            <div class="advantage__count">05</div>
+                            <div class="advantage__content">
+                                <div class="advantage__caption">Вигідність</div>
+                                <div class="advantage__descr descr">Ми відмовились від шоу-руму та офісу на користь
+                                    вартості&nbsp;та&nbsp;мобільності</div>
+                            </div>
+                        </li>
+                        <div class="sm_image-trail"></div>
+                    </ul>
+                </div>
+            </section>
+
+            <!--.......................TALK.......................-->
+
+            <section class="talk">
+                <div class="talk__content">
+                    <div class="talk__container container">
+                        <div class="talk__body">
+                            <h2 class="talk__title">Обговоримо ваш проект?</h2>
+                            <form action="#" class="talk__form form-field">
+                                <p class="form-field__decrs descr">Заповніть форму і найближчим часом ми зв'яжемося з
+                                    вами!</p>
+                                <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
+                                <input type="tel" name="phone" required placeholder="Номер телефону"
+                                    class="form-field__input">
+                                <label class="custom-file">
+                                    <input type="file" class="custom-file__input">
+                                    <span class="custom-file__text">Прикріпити проект</span>
+                                </label>
+                                <button class="form-field__btn btn btn-reset" type="submit">Відправити</button>
+                                <label class="custom-checkbox form-field__checkbox">
+                                    <input type="checkbox" class="custom-checkbox__input">
+                                    <span class="custom-checkbox__text">Даю згоду на оброблення персональних
+                                        даних</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="talk__image">
+                    <img src="images/talk.jpg" alt="">
+                </div>
+            </section>
+
+            <!--.......................STAGES.......................-->
+
+            <section class="stages">
+                <div class="container">
+                    <h2 class="stages__title title title--center">Етапи роботи</h2>
+                    <ul class="stages__list list-reset">
+                        <li class="stages__item stage">
+                            <div class="stage__caption">Підписання договору</div>
+                            <div class="stage__descr descr">Визначаємось з бюджетом, матеріалами та фурнітурою.
+                                Вносимо правки в проект,
+                                підписуємо пакет документів.</div>
+                        </li>
+                        <li class="stages__item stage">
+                            <div class="stage__caption">Виготовлення </div>
+                            <div class="stage__descr descr">Після підписання договору та визначення термінів, команда
+                                Рінго приступає до
+                                найцікавішого - виробництва!</div>
+                        </li>
+                        <li class="stages__item stage">
+                            <div class="stage__caption">Встановлення</div>
+                            <div class="stage__descr descr">По готовності виробництва починаємо монтаж на обєкті. У
+                                домовлений час виконуємо доставку та монтаж.</div>
+                        </li>
+                        <li class="stages__item stage">
+                            <div class="stage__caption">Новосілля</div>
+                            <div class="stage__descr descr">По закінченню робимо перевірку та підписуємо акт закінчення
+                                робівт. </div>
+                        </li>
+                </div>
+            </section>
+
+            <!--.......................WORKING......................-->
+
+            <section class="working">
+                <div class="container-big">
+                    <h2 class="working__title title title--center">Зараз в роботі</h2>
+                    <div class="working-slider swiper">
+                        <div class="btn-reset slider-nav__btn slider-btn working__prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" />
+                            </svg>
+                        </div>
+                        <div class="btn-reset slider-nav__btn slider-btn working__next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z" />
+                            </svg>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="working__image">
+                                    <img src="images/workink1.jpg" alt="Work 1" class="swiper-slide">
+                                </div>
+                                <div class="working__content">
+                                    <p class="working__caption">Квартира ЖК Медовий</p>
+                                    <span class="working__text">3 етап</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="working__image">
+                                    <img src="images/workink1.jpg" alt="Work 1" class="swiper-slide">
+                                </div>
+                                <div class="working__content">
+                                    <p class="working__caption">Квартира ЖК Медовий</p>
+                                    <span class="working__text">3 етап</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="working__image">
+                                    <img src="images/workink1.jpg" alt="Work 1" class="swiper-slide">
+                                </div>
+                                <div class="working__content">
+                                    <p class="working__caption">Квартира ЖК Медовий</p>
+                                    <span class="working__text">3 етап</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="working__image">
+                                    <img src="images/workink1.jpg" alt="Work 1" class="swiper-slide">
+                                </div>
+                                <div class="working__content">
+                                    <p class="working__caption">Квартира ЖК Медовий</p>
+                                    <span class="working__text">3 етап</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--.......................GIFTS.......................-->
+
+            <section class="gifts">
+                <div class="gifts__container">
+                    <div class="gifts__holder">
+                        <div class="gifts__image gifts__item">
+                            <img src="images/gift1.png" alt="Gift">
+                            <div class="gifts__text">
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.375 2.8125C3.375 2.06658 3.67132 1.35121 4.19876 0.823762C4.72621 0.296316 5.44158 0 6.1875 0C6.93342 0 7.64879 0.296316 8.17624 0.823762C8.70368 1.35121 9 2.06658 9 2.8125C9 2.06658 9.29632 1.35121 9.82376 0.823762C10.3512 0.296316 11.0666 0 11.8125 0C12.5584 0 13.2738 0.296316 13.8012 0.823762C14.3287 1.35121 14.625 2.06658 14.625 2.8125V2.81925C14.625 2.898 14.625 3.123 14.5822 3.375H16.875C17.1734 3.375 17.4595 3.49353 17.6705 3.7045C17.8815 3.91548 18 4.20163 18 4.5V5.625C18 5.92337 17.8815 6.20952 17.6705 6.4205C17.4595 6.63147 17.1734 6.75 16.875 6.75H1.125C0.826631 6.75 0.540483 6.63147 0.329505 6.4205C0.118526 6.20952 0 5.92337 0 5.625V4.5C0 4.20163 0.118526 3.91548 0.329505 3.7045C0.540483 3.49353 0.826631 3.375 1.125 3.375H3.41775C3.38804 3.19127 3.37374 3.00537 3.375 2.81925V2.8125ZM4.5765 3.375H7.875V2.8125C7.875 2.59089 7.83135 2.37146 7.74655 2.16672C7.66174 1.96198 7.53744 1.77596 7.38074 1.61926C7.22404 1.46256 7.03802 1.33826 6.83328 1.25345C6.62854 1.16865 6.40911 1.125 6.1875 1.125C5.96589 1.125 5.74646 1.16865 5.54172 1.25345C5.33698 1.33826 5.15096 1.46256 4.99426 1.61926C4.83756 1.77596 4.71326 1.96198 4.62845 2.16672C4.54365 2.37146 4.5 2.59089 4.5 2.8125C4.5 2.90812 4.50225 3.12075 4.55062 3.29625C4.55738 3.32308 4.56603 3.34939 4.5765 3.375ZM10.125 3.375H13.4235C13.4338 3.34935 13.4425 3.32304 13.4494 3.29625C13.4978 3.12075 13.5 2.90812 13.5 2.8125C13.5 2.36495 13.3222 1.93572 13.0057 1.61926C12.6893 1.30279 12.2601 1.125 11.8125 1.125C11.3649 1.125 10.9357 1.30279 10.6193 1.61926C10.3028 1.93572 10.125 2.36495 10.125 2.8125V3.375ZM16.875 7.875V16.3125C16.875 16.7601 16.6972 17.1893 16.3807 17.5057C16.0643 17.8222 15.6351 18 15.1875 18H10.125V7.875H16.875ZM2.8125 18C2.36495 18 1.93572 17.8222 1.61926 17.5057C1.30279 17.1893 1.125 16.7601 1.125 16.3125V7.875H7.875V18H2.8125Z" />
+                                </svg>
+                                <div class="gifts__caption">Подарунок</div>
+                            </div>
+                        </div>
+                        <div class="gifts__content gifts__item">
+                            <h2 class="gifts__title title title--center">Рінго роздає подарунки!</h2>
+                            <p class="descr descr--center gifts__descr">При замовленні до нового року, отримай цінний
+                                подарунок
+                                для свого комфорту</p>
+                            <a href="#" class="gifts__btn btn btn-reset">Хочу подарунок</a>
+                        </div>
+                        <div class="gifts__image gifts__item">
+                            <img src="images/imagee.png" alt="Gift">
+                            <div class="gifts__text">
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.375 2.8125C3.375 2.06658 3.67132 1.35121 4.19876 0.823762C4.72621 0.296316 5.44158 0 6.1875 0C6.93342 0 7.64879 0.296316 8.17624 0.823762C8.70368 1.35121 9 2.06658 9 2.8125C9 2.06658 9.29632 1.35121 9.82376 0.823762C10.3512 0.296316 11.0666 0 11.8125 0C12.5584 0 13.2738 0.296316 13.8012 0.823762C14.3287 1.35121 14.625 2.06658 14.625 2.8125V2.81925C14.625 2.898 14.625 3.123 14.5822 3.375H16.875C17.1734 3.375 17.4595 3.49353 17.6705 3.7045C17.8815 3.91548 18 4.20163 18 4.5V5.625C18 5.92337 17.8815 6.20952 17.6705 6.4205C17.4595 6.63147 17.1734 6.75 16.875 6.75H1.125C0.826631 6.75 0.540483 6.63147 0.329505 6.4205C0.118526 6.20952 0 5.92337 0 5.625V4.5C0 4.20163 0.118526 3.91548 0.329505 3.7045C0.540483 3.49353 0.826631 3.375 1.125 3.375H3.41775C3.38804 3.19127 3.37374 3.00537 3.375 2.81925V2.8125ZM4.5765 3.375H7.875V2.8125C7.875 2.59089 7.83135 2.37146 7.74655 2.16672C7.66174 1.96198 7.53744 1.77596 7.38074 1.61926C7.22404 1.46256 7.03802 1.33826 6.83328 1.25345C6.62854 1.16865 6.40911 1.125 6.1875 1.125C5.96589 1.125 5.74646 1.16865 5.54172 1.25345C5.33698 1.33826 5.15096 1.46256 4.99426 1.61926C4.83756 1.77596 4.71326 1.96198 4.62845 2.16672C4.54365 2.37146 4.5 2.59089 4.5 2.8125C4.5 2.90812 4.50225 3.12075 4.55062 3.29625C4.55738 3.32308 4.56603 3.34939 4.5765 3.375ZM10.125 3.375H13.4235C13.4338 3.34935 13.4425 3.32304 13.4494 3.29625C13.4978 3.12075 13.5 2.90812 13.5 2.8125C13.5 2.36495 13.3222 1.93572 13.0057 1.61926C12.6893 1.30279 12.2601 1.125 11.8125 1.125C11.3649 1.125 10.9357 1.30279 10.6193 1.61926C10.3028 1.93572 10.125 2.36495 10.125 2.8125V3.375ZM16.875 7.875V16.3125C16.875 16.7601 16.6972 17.1893 16.3807 17.5057C16.0643 17.8222 15.6351 18 15.1875 18H10.125V7.875H16.875ZM2.8125 18C2.36495 18 1.93572 17.8222 1.61926 17.5057C1.30279 17.1893 1.125 16.7601 1.125 16.3125V7.875H7.875V18H2.8125Z" />
+                                </svg>
+                                <div class="gifts__caption">Подарунок</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--.......................PARTNERS.......................-->
+
+            <section class="partners">
+                <div class="container">
+                    <h2 class="partners__title title title--center">Наші партнери</h2>
+                    <div class="swiper partners-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="partners__brand">
+                                    <img src="images/brands/brand1.png" alt="brand 1" class="partners__image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners__brand">
+                                    <img src="images/brands/brand2.png" alt="brand 1" class="partners__image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners__brand">
+                                    <img src="images/brands/brand3.png" alt="brand 1" class="partners__image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners__brand">
+                                    <img src="images/brands/brand4.png" alt="brand 1" class="partners__image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners-slider__btns">
+                            <div class="btn-reset slider-nav__btn slider-btn partners__prev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" />
+                                </svg>
+                            </div>
+                            <div class="btn-reset slider-nav__btn slider-btn partners__next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--.......................QUESTIONS.......................-->
+
+            <section class="questions">
+                <div class="questions__content">
+                    <div class="questions__container container">
+                        <div class="questions__body">
+                            <h2 class="questions__title">Залишилися питання?</h2>
+                            <form action="#" class="questions__form form-field">
+                                <p class="form-field__decrs descr">Отримай безкоштовну консультацію менеджера та
+                                    прорахунок проекту </p>
+                                <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
+                                <input type="tel" name="phone" required placeholder="Номер телефону"
+                                    class="form-field__input form-field__input--question">
+                                <button class="form-field__btn btn btn-reset" type="submit">Відправити</button>
+                                <label class="custom-checkbox form-field__checkbox">
+                                    <input type="checkbox" class="custom-checkbox__input custom-checkbox__input">
+                                    <span class="custom-checkbox__text">Даю згоду на оброблення персональних
+                                        даних</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__image">
+                    <img src="images/question.jpg" alt="">
+                </div>
+            </section>
+
+        </main>
+
+        <!--.......................FOOTER.......................-->
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__top">
+                    <div class="footer__contacts">
+                        <a href="#" class="logo footer__logo">
+                            <img src="images/logo.svg" alt="Ringo Ukraine">
+                        </a>
+                        <div class="footer__social social">
+                            <span class="social__text">Соцмережі:</span>
+                            <a href="#" class="social__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.9471 8.305C20.937 7.54762 20.7952 6.79777 20.5281 6.089C20.2964 5.49115 19.9426 4.9482 19.4892 4.49483C19.0359 4.04146 18.4929 3.68765 17.8951 3.456C17.1954 3.19336 16.4562 3.05134 15.7091 3.036C14.7471 2.993 14.4421 2.981 12.0001 2.981C9.55807 2.981 9.24507 2.981 8.29007 3.036C7.54323 3.05145 6.80442 3.19347 6.10507 3.456C5.50713 3.68749 4.96409 4.04124 4.5107 4.49463C4.05732 4.94802 3.70356 5.49106 3.47207 6.089C3.2089 6.78813 3.06719 7.52711 3.05307 8.274C3.01007 9.237 2.99707 9.542 2.99707 11.984C2.99707 14.426 2.99707 14.738 3.05307 15.694C3.06807 16.442 3.20907 17.18 3.47207 17.881C3.70395 18.4788 4.05797 19.0216 4.51151 19.4748C4.96505 19.928 5.50813 20.2816 6.10607 20.513C6.8035 20.7862 7.54244 20.9384 8.29107 20.963C9.25407 21.006 9.55907 21.019 12.0011 21.019C14.4431 21.019 14.7561 21.019 15.7111 20.963C16.4582 20.9483 17.1974 20.8066 17.8971 20.544C18.4948 20.3121 19.0376 19.9582 19.4909 19.5048C19.9442 19.0515 20.2982 18.5087 20.5301 17.911C20.7931 17.211 20.9341 16.473 20.9491 15.724C20.9921 14.762 21.0051 14.457 21.0051 12.014C21.0031 9.572 21.0031 9.262 20.9471 8.305ZM11.9941 16.602C9.44007 16.602 7.37107 14.533 7.37107 11.979C7.37107 9.425 9.44007 7.356 11.9941 7.356C13.2202 7.356 14.396 7.84306 15.263 8.71004C16.13 9.57703 16.6171 10.7529 16.6171 11.979C16.6171 13.2051 16.13 14.381 15.263 15.248C14.396 16.1149 13.2202 16.602 11.9941 16.602ZM16.8011 8.263C16.6595 8.26313 16.5192 8.23534 16.3884 8.18121C16.2575 8.12708 16.1386 8.04768 16.0385 7.94755C15.9384 7.84743 15.859 7.72854 15.8049 7.59769C15.7507 7.46684 15.7229 7.3266 15.7231 7.185C15.7231 7.0435 15.7509 6.90339 15.8051 6.77266C15.8592 6.64193 15.9386 6.52315 16.0387 6.42309C16.1387 6.32304 16.2575 6.24367 16.3882 6.18952C16.519 6.13537 16.6591 6.1075 16.8006 6.1075C16.9421 6.1075 17.0822 6.13537 17.2129 6.18952C17.3436 6.24367 17.4624 6.32304 17.5625 6.42309C17.6625 6.52315 17.7419 6.64193 17.7961 6.77266C17.8502 6.90339 17.8781 7.0435 17.8781 7.185C17.8781 7.781 17.3961 8.263 16.8011 8.263Z" />
+                                    <path
+                                        d="M11.994 14.982C13.6525 14.982 14.997 13.6375 14.997 11.979C14.997 10.3205 13.6525 8.976 11.994 8.976C10.3355 8.976 8.99097 10.3205 8.99097 11.979C8.99097 13.6375 10.3355 14.982 11.994 14.982Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg width="10" height="21" viewBox="0 0 10 21" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_228_466)">
+                                        <path
+                                            d="M2.55277 20.5746V10.9204H0V7.44441H2.55277V4.47548C2.55277 2.14247 4.0607 0 7.53529 0C8.9421 0 9.98237 0.134866 9.98237 0.134866L9.9004 3.38083C9.9004 3.38083 8.83949 3.3705 7.68178 3.3705C6.42879 3.3705 6.22804 3.94793 6.22804 4.90631V7.44441H10L9.83588 10.9204H6.22804V20.5746H2.55277Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_228_466">
+                                            <rect width="10" height="20.5746" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <ul class="footer__list list-reset">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Основні напрямки</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Про компанію</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Переваги</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list list-reset">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Етапи роботи</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Зараз в роботі</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Стати партнером</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__right">
+                        <a href="tel:380676615415" class="footer__phone">+380 67661 5415</a>
+                        <a href="#" class="footer__btn btn btn-reset">На каву з менеджером!</a>
+                    </div>
+                </div>
+
+                <div class="footer__brend brend">
+                    <p class="brend__caption">Бренди комплектуючих</p>
+                    <ul class="footer__brands brands list-reset">
+                        <li class="brands__item">
+                            <img src="images/brands/brand12.jpg" alt="brand 1" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand13.jpg" alt="brand 2" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand5.png" alt="brand 5" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand6.png" alt="brand 6" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand7.png" alt="brand 7" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand8.png" alt="brand 8" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand9.png" alt="brand 9" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand10.png" alt="brand 10" class="partners__image">
+                        </li>
+                        <li class="brands__item">
+                            <img src="images/brands/brand11.png" alt="brand 11" class="partners__image">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__bottom">
+                    <span>© 2021 Ringo</span>
+                    <span>Дизайн сайту</span>
+                </div>
+            </div>
+        </footer>
+
+        <div class="graph-modal">
+            <div class="graph-modal__container site-modal site-modal--partner" role="dialog" aria-modal="true"
+                data-graph-target="first">
+                <button class="btn-reset graph-modal__close js-modal-close"
+                    aria-label="Закрыть модальное окно"></button>
+                <div class="graph-modal__content">
+                    <h2 class="modal__title">Хочете стати нашим партнером?</h2>
+                    <form action="#" class="questions__form form-field">
+                        <p class="form-field__decrs descr">Заповніть форму, і ми звяжемося та обговоримо з вами усі
+                            деталі</p>
+                        <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
+                        <input type="tel" name="phone" required placeholder="Номер телефону"
+                            class="form-field__input">
+                            <textarea name="message" placeholder="Коротко про себе"
+                            class="form-field__input form-field__input--big"></textarea>
+                        <button class="form-field__btn btn btn-reset" type="submit">Відправити</button>
+                        <label class="custom-checkbox form-field__checkbox">
+                            <input type="checkbox" class="custom-checkbox__input custom-checkbox__input">
+                            <span class="custom-checkbox__text">Даю згоду на оброблення персональних
+                                даних</span>
+                        </label> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+            integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/graph-modal.min.js"></script>
+        <!-- jQuery -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <!-- Swiper Js Min -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/swipers.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

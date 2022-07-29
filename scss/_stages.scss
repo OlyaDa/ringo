@@ -1,0 +1,109 @@
+.stages {
+    padding-top: 140px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        counter-reset: section;
+        justify-content: space-between;
+        padding-bottom: 100px;
+        border-bottom: 1px solid rgba(#282b22, 0.2);
+    }
+
+    &__item {
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        &::before {
+            counter-increment: section;
+            content: "0" counter(section);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 60px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            border: 1px solid rgba(#282b22, 0.3);
+            color: var(--color-cabbage);
+            border-radius: 100%;
+            margin-bottom: 35px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            max-width: 240px;
+            width: 50%;
+            &:nth-child(odd) {
+                margin-right: 140px;
+            }
+            &:nth-child(-n+2) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    @media (max-width: 740px) {
+        &__title {
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+    }
+
+    @media (max-width: 674px) {
+        &__item {
+            &:nth-child(odd) {
+                margin-right: 60px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) { 
+
+        &__item {
+            max-width: 100%;
+            width: 100%;
+            &:nth-child(odd) {
+                margin-right: 0px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+            &::before {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) { 
+        padding-top: 80px;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.stage {
+    &__caption {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        color: var(--color-metal);
+        margin-bottom: 15px;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 145%;
+        color: var(--color-metal);
+        opacity: 0.8;
+    }
+}
