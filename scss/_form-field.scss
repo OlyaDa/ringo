@@ -22,17 +22,20 @@
         border: none;
         border-bottom: 2px solid rgba(#fff, 0.2);
         margin-bottom: 13px;
-        &--question {
-            margin-bottom: 40px;
-        }
+        width: 100%;
+        // &--question {
+        //     margin-bottom: 40px;
+        // }
         &--big {
             height: 95px;
             padding: 10px 0;
-            margin-bottom: 40px;
+            // margin-bottom: 40px;
         }
     }
 
     &__btn {
+        width: 100%;
         margin-bottom: 25px;
+        margin-top: 40px;
     }
 }

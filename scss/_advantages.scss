@@ -3,9 +3,7 @@
     &__list {
         border-top: 1px solid rgba(#282b22, 0.2);
     }
-    &__image {
-        z-index: 1000;
-    }
+
     @media (max-width: 740px) {
         padding: 100px 0;
 
@@ -30,6 +28,8 @@
     align-items: flex-start;
     padding: 50px 0;
     border-bottom: 1px solid rgba(#282b22, 0.2);
+    cursor: none;
+
     &::before {
         content: "";
         position: absolute;
@@ -39,21 +39,6 @@
         height: 124px;
         width: 1px;
         background-color: rgba(#282b22, 0.2);
-    }
-    &:hover {
-        .advantage__image {
-            opacity: 1;
-        }
-    }
-
-    &__image {
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        position: absolute;
-        left: 25%;
-        top: -35px;
-        transform: translateX(-50%);
-        background:  drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));;
     }
 
     &__count {
@@ -101,6 +86,11 @@
             display: none;
         }
 
+        .cursor {
+            display: none;
+            cursor: auto;
+        }
+
         &__content {
             padding-left: 30px;
             width: 95%;
@@ -116,98 +106,35 @@
     }
 }
 
-// .advantage {
-//     position: relative;
-//     padding: 5px 0;
-//     z-index: 0;
-// }
-// .advantage_list {
-//     --inner_h: 40px;
-//     --inner_v: 52px;
-//     position: relative;
-//     counter-reset: advantage;
-//     margin-top: var(--i3);
-//     border-top: 1px solid var(--black_20);
-//     z-index: 1;
-// }
-// .advantage_list li {
-//     counter-increment: direction;
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-pack: justify;
-//     -ms-flex-pack: justify;
-//     justify-content: space-between;
-//     padding: var(--inner_v) 0;
-//     border-bottom: 1px solid var(--black_20);
-// }
-// .advantage_list li:before {
-//     content: "0" counter(direction);
-//     display: block;
-//     font-size: var(--h1);
-//     font-weight: 600;
-//     opacity: 0.5;
-//     -webkit-transition: color 0.43s, opacity 0.43s;
-//     -o-transition: color 0.43s, opacity 0.43s;
-//     transition: color 0.43s, opacity 0.43s;
-// }
-// .advantage_list li div {
-//     width: 50%;
-//     padding: 0 var(--inner_h);
-// }
-// .advantage_list li h4 {
-//     margin-bottom: 12px;
-//     -webkit-transition: color 0.43s;
-//     -o-transition: color 0.43s;
-//     transition: color 0.43s;
-// }
-// .advantage_list li:hover h4,
-// .advantage_list li:hover:before {
-//     color: var(--gold);
-//     opacity: 1;
-// }
-// .advantage_images {
-//     overflow: hidden;
-//     display: none;
-//     position: fixed;
-//     width: 340px;
-//     height: 240px;
-//     z-index: -1;
-//     -webkit-transform: translate3d(-50%, -50%, 0);
-//     transform: translate3d(-50%, -50%, 0);
-// }
-// .advantage_images div {
-//     display: none;
-// }
-// .advantage_images img {
-//     height: 100%;
-//     -o-object-fit: cover;
-//     object-fit: cover;
-//     -o-object-position: center;
-//     object-position: center;
-// }
-// .advantage_images div.animate img {
-//     -webkit-animation: scale 0.8s both linear;
-//     animation: scale 0.8s both linear;
-// }
-// @-webkit-keyframes scale {
-//     from {
-//         -webkit-transform: scale(1.5);
-//         transform: scale(1.5);
-//     }
-//     to {
-//         -webkit-transform: scale(1);
-//         transform: scale(1);
-//     }
-// }
-// @keyframes scale {
-//     from {
-//         -webkit-transform: scale(1.5);
-//         transform: scale(1.5);
-//     }
-//     to {
-//         -webkit-transform: scale(1);
-//         transform: scale(1);
-//     }
-// }
+.advantage:hover .advantage__caption {
+    color: var(--color-copper);
+    transition: all 0.3s ease-in-out;
+}
+
+.cursor {
+    --transition-cursor: 2s cubic-bezier(.05, .5, 0, 1);
+    --width: 340px;
+	--height: 240px;
+	position: fixed;
+	width: var(--width);
+	height: var(--height);
+	top: calc(var(--height) * -.5);
+	left: calc(var(--width) * -.5);
+	overflow: hidden;
+	transform: translate3d(var(--move-x), var(--move-y), 0);
+	transition: transform var(--transition-cursor), height 1s ease;
+	z-index: -1;
+	will-change: transform;
+    height: 0;
+}
+
+.advantage:hover .cursor {
+	height: var(--height);
+}
+
+.cursor__image {
+	position: relative;
+    width: calc(var(--width) * 2);
+	height: calc(var(--height) * 2);
+}
 

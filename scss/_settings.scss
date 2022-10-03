@@ -14,8 +14,9 @@
     display: none;
 }
 
-.site-container {
-    overflow: hidden;
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
 }
 
 body {
@@ -25,6 +26,11 @@ body {
     font-weight: 500;
     height: 100%;
 }
+
+body.lock {
+	overflow: hidden;
+}
+
 .container {
     max-width: 1240px;
     padding: 0 20px;
@@ -147,35 +153,6 @@ a {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
-
-.graph-modal__container {
-    width: 450px;
-    background-color: #3d4a39;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    border-radius: 0;
-    padding: 60px;
-    cursor: default;
-    display: none;
-    text-align: center;
-}
-
-.modal__title {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 130%;
-    margin: 0;
-    margin-bottom: 25px;
-    color: var(--color-white);
-}
-.graph-modal__close {
-    position: absolute;
-    background-image: url(../images/close.png);
-    right: -40px;
-    top: -5px;
-    height: 35px;
-    width: 35px;
 }
 
 @media (max-width: 540px) {

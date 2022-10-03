@@ -12,8 +12,8 @@
     <title></title>
 </head>
 
-<body id="page">
-    <div class="site-container">
+<body>
+    <div class="wrapper">
         <!--.......................HEADER.......................-->
         <div class="overlay"></div>
         <header class="header">
@@ -142,8 +142,8 @@
                                             приміщень,
                                             забезпечимо Вас якісним меблевим продуктом власного виробництва.
                                         </p>
-                                        <a href="#" class="banner__btn btn btn-reset" data-graph-animation="custom"
-                                            data-graph-path="first">Обговорити проект</a>
+                                        <a href="#popup" class="banner__btn btn btn-reset popup-link">Обговорити
+                                            проект</a>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +162,8 @@
                                             вчасно реалізувати проект на найвищому рівні. Ми забезпечуємо ваш спокій та
                                             беремо на себе вирішення будь-яких задач.
                                         </p>
-                                        <a href="#" class="banner__btn btn btn-reset">Обговорити проект</a>
+                                        <a href="#popup" class="banner__btn popup-link btn btn-reset">Обговорити
+                                            проект</a>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +181,8 @@
                                             Наш інтер`єр - це ваш індивідуальний простір, зона комфорту в житті та
                                             роботі
                                         </p>
-                                        <a href="#" class="banner__btn btn btn-reset">Обговорити проект</a>
+                                        <a href="#popup" class="banner__btn popup-link btn btn-reset">Обговорити
+                                            проект</a>
                                     </div>
                                 </div>
                             </div>
@@ -266,117 +268,68 @@
                 </div>
             </section>
 
-
-            <!-- <div class="sm_image-trail-section">
-                <div class="sm_image-trail-container">
-
-                    <div class="text">
-                        <h1>One</h1>
-                    </div>
-
-                </div>
-                <div class="sm_image-trail-container">
-
-                    <div class="text">
-                        <h1>Two</h1>
-                    </div>
-
-                </div>
-                <div class="sm_image-trail-container">
-
-                    <div class="text">
-                        <h1>Three</h1>
-                    </div>
-
-                </div>
-                <div class="sm_image-trail-container">
-
-                    <div class="text">
-                        <h1>Four</h1>
-                    </div>
-
-                </div>
-
-                <div class="sm_image-trail-container">
-
-                    <div class="text">
-                        <h1>Five</h1>
-                    </div>
-
-                </div>
-
-                <div class="sm_image-trail-container">
-
-                    <div class="text">
-                        <h1>Six</h1>
-                    </div>
-
-                </div>
-
-                <div class="sm_image-trail"></div>
-            </div> -->
             <!--.......................ADVANTAGES.......................-->
 
             <section class="advantages">
                 <div class="container">
                     <h2 class="advantages__title title title--center">Наші переваги</h2>
-                    <ul class="advantages__list list-reset sm_image-trail-section">
-                        <li class="advantages__item advantage sm_image-trail-container">
-                            <!-- <div class="advantage__image">
-                                <img src="images/advantage-mob.jpg" alt="Мобільність">
-                            </div> -->
+
+                    <ul class="advantages__list list-reset ">
+                        <li class="advantages__item advantage">
                             <div class="advantage__count">01</div>
                             <div class="advantage__content">
                                 <div class="advantage__caption">Мобільність</div>
                                 <div class="advantage__descr descr">Проводимо зустрічі на об`єктах в затишних закладах
                                     Києва</div>
                             </div>
+                            <div class="cursor">
+                                <div class="cursor__image" style="background-image: url(images/advantage-ben.jpg)"></div>
+                            </div>
                         </li>
-                        <li class="advantages__item advantage advantage--two sm_image-trail-container">
-                            <!-- <div class="advantage__image">
-                                <img src="images/advantage-arr.jpg" alt="Надійність">
-                            </div> -->
+                        <li class="advantages__item advantage">
                             <div class="advantage__count">02</div>
                             <div class="advantage__content">
                                 <div class="advantage__caption">Надійність</div>
                                 <div class="advantage__descr descr">Система нашої роботи зосереджена на якості та
                                     термінах завершення&nbsp;проекту</div>
                             </div>
+                            <div class="cursor">
+                                <div class="cursor__image" style="background-image: url(images/advantage-arr.jpg)"></div>
+                            </div>
                         </li>
-                        <li class="advantages__item advantage advantage--three sm_image-trail-container">
-                            <!-- <div class="advantage__image">
-                                <img src="images/advantage-qual.jpg" alt="Якість">
-                            </div> -->
+                        <li class="advantages__item advantage">
                             <div class="advantage__count">03</div>
                             <div class="advantage__content">
                                 <div class="advantage__caption">Якість</div>
                                 <div class="advantage__descr descr">Виготовляємо виключно з перевірених європейських
                                     брендів</div>
                             </div>
+                            <div class="cursor">
+                                <div class="cursor__image" style="background-image: url(images/advantage-qual.jpg)"></div>
+                            </div>
                         </li>
-                        <li class="advantages__item advantage advantage--four sm_image-trail-container">
-                            <!-- <div class="advantage__image">
-                                <img src="images/advantage-prof.jpg" alt="Професіоналізм">
-                            </div> -->
+                        <li class="advantages__item advantage">
                             <div class="advantage__count">04</div>
                             <div class="advantage__content">
                                 <div class="advantage__caption">Професіоналізм</div>
                                 <div class="advantage__descr descr">Наша команда - це клуб професіоналів, об`єднаних в
                                     одній компанії</div>
                             </div>
+                            <div class="cursor">
+                                <div class="cursor__image" style="background-image: url(images/advantage-prof.jpg)"></div>
+                            </div>
                         </li>
-                        <li class="advantages__item advantage advantage--five sm_image-trail-container">
-                            <!-- <div class="advantage__image">
-                                <img src="images/advantage-ben.jpg" alt="Вигідність">
-                            </div> -->
+                        <li class="advantages__item advantage">
                             <div class="advantage__count">05</div>
                             <div class="advantage__content">
                                 <div class="advantage__caption">Вигідність</div>
                                 <div class="advantage__descr descr">Ми відмовились від шоу-руму та офісу на користь
                                     вартості&nbsp;та&nbsp;мобільності</div>
                             </div>
+                            <div class="cursor">
+                                <div class="cursor__image" style="background-image: url(images/advantage-mob.jpg)"></div>
+                            </div>
                         </li>
-                        <div class="sm_image-trail"></div>
                     </ul>
                 </div>
             </section>
@@ -393,7 +346,7 @@
                                     вами!</p>
                                 <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
                                 <input type="tel" name="phone" required placeholder="Номер телефону"
-                                    class="form-field__input">
+                                    data-validate-field="tel" class="form-field__input">
                                 <label class="custom-file">
                                     <input type="file" class="custom-file__input">
                                     <span class="custom-file__text">Прикріпити проект</span>
@@ -530,7 +483,7 @@
                             <p class="descr descr--center gifts__descr">При замовленні до нового року, отримай цінний
                                 подарунок
                                 для свого комфорту</p>
-                            <a href="#" class="gifts__btn btn btn-reset">Хочу подарунок</a>
+                            <a href="#popup2" class="gifts__btn popup-link btn btn-reset">Хочу подарунок</a>
                         </div>
                         <div class="gifts__image gifts__item">
                             <img src="images/imagee.png" alt="Gift">
@@ -618,7 +571,6 @@
                     <img src="images/question.jpg" alt="">
                 </div>
             </section>
-
         </main>
 
         <!--.......................FOOTER.......................-->
@@ -681,7 +633,7 @@
                     </div>
                     <div class="footer__right">
                         <a href="tel:380676615415" class="footer__phone">+380 67661 5415</a>
-                        <a href="#" class="footer__btn btn btn-reset">На каву з менеджером!</a>
+                        <a href="#popup3" class="footer__btn popup-link btn btn-reset">На каву з менеджером!</a>
                     </div>
                 </div>
 
@@ -725,7 +677,88 @@
             </div>
         </footer>
 
-        <div class="graph-modal">
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__close close-popup btn-reset" aria-label="Закрыть модальное окно"></button>
+                    <h2 class="popup__title">Обговоримо проект вашого інтер’єру?</h2>
+                    <form action="#" class="questions__form popup__form form-field">
+                        <p class="form-field__decrs popup__descr descr">Заповніть форму, і ми звяжемося та обговоримо з
+                            вами усі
+                            деталі</p>
+                        <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
+                        <input type="tel" name="phone" required placeholder="Номер телефону" class="form-field__input">
+                        <textarea name="message" placeholder="Коротко про майбутній проект"
+                            class="form-field__input form-field__input--big"></textarea>
+                        <a href="#popup4" class="form-field__btn btn btn-reset popup-link" type="submit">Відправити</a>
+                        <label class="custom-checkbox form-field__checkbox">
+                            <input type="checkbox" class="custom-checkbox__input custom-checkbox__input">
+                            <span class="custom-checkbox__text">Даю згоду на оброблення персональних
+                                даних</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup2" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__close close-popup btn-reset" aria-label="Закрыть модальное окно"></button>
+                    <h2 class="popup__title">Хочете отримати подарунок?</h2>
+                    <form action="#" class="questions__form popup__form form-field">
+                        <p class="form-field__decrs popup__descr descr">Заповніть форму, і ми звяжемося та обговоримо з
+                            вами усі
+                            деталі</p>
+                        <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
+                        <input type="tel" name="phone" required placeholder="Номер телефону" class="form-field__input">
+                        <a href="#popup4" class="form-field__btn btn btn-reset popup-link" type="submit">Відправити</a>
+                        <label class="custom-checkbox form-field__checkbox">
+                            <input type="checkbox" class="custom-checkbox__input custom-checkbox__input">
+                            <span class="custom-checkbox__text">Даю згоду на оброблення персональних
+                                даних</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__close close-popup btn-reset" aria-label="Закрыть модальное окно"></button>
+                    <h2 class="popup__title">Поговоримо?</h2>
+                    <form action="#" class="questions__form popup__form form-field">
+                        <p class="form-field__decrs popup__descr descr">Заповніть форму, і ми звяжемося та обговоримо з
+                            вами усі
+                            деталі</p>
+                        <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
+                        <input type="tel" name="phone" required placeholder="Номер телефону" class="form-field__input">
+                        <textarea name="message" placeholder="Тема"
+                            class="form-field__input form-field__input--big"></textarea>
+                        <a href="#popup4" class="form-field__btn btn btn-reset popup-link" type="submit">Відправити</a>
+                        <label class="custom-checkbox form-field__checkbox">
+                            <input type="checkbox" class="custom-checkbox__input custom-checkbox__input">
+                            <span class="custom-checkbox__text">Даю згоду на оброблення персональних
+                                даних</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup4" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__close close-popup btn-reset" aria-label="Закрыть модальное окно"></button>
+                    <h2 class="popup__title">Дякуюємо!</h2>
+                    <p class="form-field__decrs popup__descr descr">Ваша заявка успішно відправилена</p>
+                    <button class="form-field__btn btn btn-reset close-popup" type="submit">Ок</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="graph-modal">
             <div class="graph-modal__container site-modal site-modal--partner" role="dialog" aria-modal="true"
                 data-graph-target="first">
                 <button class="btn-reset graph-modal__close js-modal-close"
@@ -736,33 +769,34 @@
                         <p class="form-field__decrs descr">Заповніть форму, і ми звяжемося та обговоримо з вами усі
                             деталі</p>
                         <input type="text" name="name" required placeholder="Ім'я" class="form-field__input">
-                        <input type="tel" name="phone" required placeholder="Номер телефону"
-                            class="form-field__input">
-                            <textarea name="message" placeholder="Коротко про себе"
+                        <input type="tel" name="phone" required placeholder="Номер телефону" class="form-field__input">
+                        <textarea name="message" placeholder="Коротко про себе"
                             class="form-field__input form-field__input--big"></textarea>
                         <button class="form-field__btn btn btn-reset" type="submit">Відправити</button>
                         <label class="custom-checkbox form-field__checkbox">
                             <input type="checkbox" class="custom-checkbox__input custom-checkbox__input">
                             <span class="custom-checkbox__text">Даю згоду на оброблення персональних
                                 даних</span>
-                        </label> 
+                        </label>
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
             integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/graph-modal.min.js"></script>
-        <!-- jQuery -->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- jQuery -->
-        <!-- <script src="js/jquery.min.js"></script> -->
         <!-- Swiper Js Min -->
         <script src="js/swiper-bundle.min.js"></script>
+        <!-- Swiper Js -->
         <script src="js/swipers.js"></script>
+        <!-- Input Mask -->
+        <script src="js/inputmask.min.js"></script>
+        <!-- Form -->
+        <script src="js/form.js"></script>
+        <!-- Popup -->
+        <script src="js/popup.js"></script>
         <!-- Main JS -->
         <script src="js/main.js"></script>
 </body>
